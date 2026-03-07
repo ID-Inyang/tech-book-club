@@ -8,27 +8,39 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   body {
     font-family: 'Martian Mono', monospace;
   }
 
-.hero-container {
-  /* Ensure the container has physical dimensions */
-  height: 100%;
-  
-  /* The paper color */
-  background-color: linear-gradient(90deg, #FFE2D1 0%, yellow 100%); 
+  .hero-container {
+    /* Ensure the container has physical dimensions */
+    height: 100%;
+    
+    /* The paper color */
+    background-color: linear-gradient(90deg, #FFE2D1 0%, yellow 100%); 
 
-  /* The grid pattern */
-  background-image: 
-    linear-gradient(to right, #e0dcd5 1px, transparent 1px),
-    linear-gradient(to bottom, #e0dcd5 1px, transparent 1px),
-    radial-gradient(circle, #ffffff, #f7f7f7);
+    /* The grid pattern */
+    background-image: 
+      linear-gradient(to right, #e0dcd5 1px, transparent 1px),
+      linear-gradient(to bottom, #e0dcd5 1px, transparent 1px),
+      radial-gradient(circle, #ffffff, #f7f7f7);
 
-  /* Set the grid size */
-  background-size: 40px 40px; 
-  
-  /* Optional: keeps the grid anchored */
-  background-position: center;
+    /* Set the grid size */
+    background-size: 40px 40px; 
+    
+    /* Optional: keeps the grid anchored */
+    background-position: center;
+  }
+
+  .arrow-down {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #002b36; /* Match your button text color */
+  border-bottom: 2px solid #002b36;
+  transform: rotate(45deg);
+  margin-left: 8px;
+  margin-bottom: 4px; /* Adjust alignment to center with text */
 }
 }
