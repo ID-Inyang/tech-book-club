@@ -8,5 +8,14 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  theme: { 
+    extend: { 
+      backgroundImage: { 
+        'gradient-107': 'linear-gradient(107deg, #FF9A60 11.37%, #062630 61.84%)', 
+      }, 
+    }, 
+  },
 })
+
+
 
