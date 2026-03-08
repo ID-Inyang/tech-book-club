@@ -16,19 +16,28 @@ const TechBook = () => {
             <p className='text-[#062630] mt-8'>
               Turn your reading time into learning time with fellow tech enthusiasts. Get curated recommendations, join vibrant discussions, and level up your skills one chapter at a time.
             </p>
-            <button class="flex align-middle justify-center mt-1.5 items-center px-6 py-3 border-2 border-slate-900 rounded-lg font-bold tracking-wide uppercase text-slate-900 hover:bg-slate-50 transition-colors">
-            Review Membership Options
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              class="w-5 h-5 ml-2" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke="currentColor" 
-              stroke-width="2.5"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </button>
+            <div className='flex items-center justify-center'>
+            <button class="flex align-middle justify-center mt-8 items-center w-100 px-6 py-3 border-2 border-slate-900 rounded-lg font-bold tracking-wide uppercase text-slate-900 hover:bg-slate-50 transition-colors">
+            <span className='mr-2'>Review Membership Options</span>
+            <img src={assets.arrowdown}/>
+            </button>
+          </div>
+          <div className='testimonial mt-12 flex'>
+            <div className="testimonial-image">
+              <img src={assets.testimonial}/>
+            </div>
+            <div className='star-section flex-col'>
+              <div className="star-image flex">
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} src={assets.star} alt="star" />
+                ))}
+              </div>
+
+              <div className="text">
+                <p><span>200+</span> developers joined already</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className='w-1/2 flex items-center justify-center'>
           <img src={assets.hero} alt="Hero Image" className='size-95 h-auto rounded-lg shadow-lg'/>
